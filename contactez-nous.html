@@ -1,0 +1,80 @@
+<t name="Contact Us" t-name="website.contactus">
+  <t t-call="website.layout">
+    <div id="wrap">
+      <div class="oe_structure">
+        <section class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96" data-scroll-background-ratio="1" style="background-image: none;">
+          <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"/>
+          <div class="container">
+            <div class="row s_nb_column_fixed">
+              <div class="col-lg-12 s_title" data-name="Title">
+                <h1 class="s_title_thin" style="font-size: 62px; text-align: center;">Contactez-nous</h1>
+              </div>
+              <div class="col-lg-12 s_text pt16 pb16" data-name="Text">
+                <p class="lead" style="text-align: center;">Contactez-nous pour toute information liée à nos prestations, un programme personnalisé, etc.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="container mt-2">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="oe_structure">
+              <form action="/website_form/" method="post" class="s_website_form container-fluid mt32" enctype="multipart/form-data" data-model_name="mail.mail" data-success_page="">
+                <div class="container">
+                  <div class="row form-group form-field">
+                    <div class="col-md-4 text-md-right col-lg-2">
+                      <label class="col-form-label" for="email_from"> De&amp;nbsp;</label>
+                    </div>
+                    <div class="col-md-8 col-lg-10">
+                      <input type="text" class="form-control o_website_form_input" name="email_from"/>
+                    </div>
+                  </div>
+                  <div class="row form-group form-field">
+                    <div class="col-md-4 text-md-right col-lg-2">
+                      <label class="col-form-label" for="subject"> Sujet&amp;nbsp;</label>
+                    </div>
+                    <div class="col-md-8 col-lg-10">
+                      <input type="text" class="form-control o_website_form_input" name="subject"/>
+                    </div>
+                  </div>
+                  <div class="row form-group form-field">
+                    <div class="col-md-4 text-md-right col-lg-2">
+                      <label class="col-form-label" for="body"> Commentaires&amp;nbsp;</label>
+                    </div>
+                    <div class="col-md-8 col-lg-10">
+                      <textarea class="form-control o_website_form_input" name="body" style="margin-top: 0px; margin-bottom: 0px; height: 106px;"/>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="offset-lg-3 offset-md-4 col-md-8 col-lg-7">
+                      <button class="btn btn-primary btn-lg o_website_form_send disabled" data-original-title="" title="" aria-describedby="tooltip112131" style="">Envoyer</button>
+                      <span id="o_website_form_result" class="text-success ml8"/>
+                    </div>
+                  </div>
+                </div>
+                <input class="form-field" type="hidden" name="email_to" value="info@magicessaouira.com"/>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <t t-call="website.company_description"/>
+          </div>
+        </div>
+      </div>
+      <div class="oe_structure mt-2">
+        <section class="s_picture pt48 pb24 bg-alpha oe_custom_bg" style="">
+          <div class="container">
+            <div class="row s_nb_column_fixed">
+              <div class="col-lg-8 offset-lg-2 pb24 bg-alpha">
+                <figure class="figure">
+                  <img src="/web/image/904/magic_essaouira_logo.png" class="figure-img img-fluid rounded padding-large o_animate_preview" alt="Odoo • une photo avec une légende" data-original-title="" title="" aria-describedby="tooltip286018" style=""/>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </t>
+</t>
